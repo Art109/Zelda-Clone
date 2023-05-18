@@ -281,7 +281,7 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1228235243
+  m_SortingLayerID: 587284831
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -3672,7 +3672,7 @@ TilemapCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
-  m_MaximumTileChangeCount: 1000
+  m_MaximumTileChangeCount: 924
   m_ExtrusionFactor: 0
 --- !u!66 &1085514258
 CompositeCollider2D:
@@ -3702,22 +3702,6 @@ CompositeCollider2D:
         Y: 250000000
       - X: 140000000
         Y: 250000000
-    - - X: -150000000
-        Y: 250000000
-      - X: -160000000
-        Y: 250000000
-      - X: -160000000
-        Y: 160000000
-      - X: -170000000
-        Y: 160000000
-      - X: -170000000
-        Y: 120000000
-      - X: -160000000
-        Y: 120000000
-      - X: -160000000
-        Y: 20000000
-      - X: -150000000
-        Y: 20000000
     - - X: 150000000
         Y: 250000000
       - X: 140000000
@@ -3760,6 +3744,22 @@ CompositeCollider2D:
         Y: -80000000
       - X: 150000000
         Y: -80000000
+    - - X: -150000000
+        Y: 250000000
+      - X: -160000000
+        Y: 250000000
+      - X: -160000000
+        Y: 160000000
+      - X: -170000000
+        Y: 160000000
+      - X: -170000000
+        Y: 120000000
+      - X: -160000000
+        Y: 120000000
+      - X: -160000000
+        Y: 20000000
+      - X: -150000000
+        Y: 20000000
     - - X: -63750000
         Y: 192500000
       - X: -63125000
@@ -4691,7 +4691,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1228235243
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 1351745571, guid: 321e89d2b43e2de4eafe5fe53c57ca48, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

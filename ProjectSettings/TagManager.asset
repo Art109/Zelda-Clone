@@ -44,6 +44,9 @@ TagManager:
   - name: Ground
     uniqueID: 2765006363
     locked: 0
+  - name: SolidObjects
+    uniqueID: 587284831
+    locked: 0
   - name: Player
     uniqueID: 3066732053
     locked: 0
