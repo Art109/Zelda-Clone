@@ -7,8 +7,8 @@ public class Camera_Movement : MonoBehaviour
 
     [SerializeField] Transform target;
     [SerializeField] float movement;
-    [SerializeField] Vector2 maxPosition;
-    [SerializeField] Vector2 minPosition;
+    public Vector2 maxPosition;
+    public Vector2 minPosition;
 
     // Start is called before the first frame update
     void Start()
