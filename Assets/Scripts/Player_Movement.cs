@@ -46,17 +46,18 @@ public class Player_Movement : MonoBehaviour
     {
         input = input.normalized;
 
-        
-        animator.SetFloat("moveX", input.x);
-        animator.SetFloat("moveY", input.y);
-
-
         rb.velocity = input.normalized * speed;
 
 
+       
+
         if (rb.velocity != Vector2.zero)
         {
+
             animator.SetBool("isWalking", true);
+            animator.SetFloat("moveX", input.x);
+            animator.SetFloat("moveY", input.y);
+
         }
         else
         {
