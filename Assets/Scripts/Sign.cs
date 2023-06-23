@@ -6,37 +6,38 @@ using UnityEngine.UI;
 
 public class Sign : MonoBehaviour
 {
-
     [SerializeField] GameObject dialogBox;
-    [SerializeField] Text dialogText;
+    [SerializeField] DialogBox dialogController;
+
+    [TextArea]
     [SerializeField] string dialog;
+
+
     bool playerInRange;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
+    
     // Update is called once per frame
     void Update()
     {
 
         if (playerInRange && Input.GetKeyDown(KeyCode.Z))
         {
-            if (dialogBox.activeInHierarchy)
+            if(dialogBox.activeInHierarchy) 
             {
                 dialogBox.SetActive(false);
             }
             else 
-            { 
+            {
                 dialogBox.SetActive(true);
-                dialogText.text = dialog;
+                StartCoroutine(dialogController.TypeDialog(dialog));
+                
             }
+            
           
         }
     }
-
+    
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
