@@ -21,12 +21,14 @@ public class Player_Movement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         speed= speedBase;
+
     }
 
     // Update is called once per frame
     void Update()
     {
 
+        
         if (isDashing)
         {
             return;
@@ -40,7 +42,10 @@ public class Player_Movement : MonoBehaviour
         Move();
 
 
+
     }
+
+  
 
     void Move()
     {

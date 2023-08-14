@@ -1,19 +1,21 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class Sign : MonoBehaviour, IInteractable
+public class NPC_ : MonoBehaviour, IInteractable
 {
-    [SerializeField] GameObject dialogBox;
+    string name = "Zé Rui Cabeca de Ovo";
     [SerializeField] DialogBox dialogController;
+    [SerializeField] GameObject dialogBox;
 
     [TextArea]
     [SerializeField] string dialog;
 
+    void Start()
+    {
+        dialog += name;
+    }
 
-    bool playerInRange;
 
     public void Interact()
     {
@@ -28,6 +30,4 @@ public class Sign : MonoBehaviour, IInteractable
 
         }
     }
-    
- 
 }
