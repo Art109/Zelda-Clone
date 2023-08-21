@@ -2,8 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player_Movement : MonoBehaviour
+public class Player : MonoBehaviour, IDamageable
 {
+    public enum PlayerState
+    {
+        Interaction,
+        Free,
+    }
     [SerializeField] float speed,speedBase = 8,speedMax = 12;   
     Rigidbody2D rb;
     Vector2 input;
@@ -97,6 +102,14 @@ public class Player_Movement : MonoBehaviour
 
 
     }
-       
- 
+
+    public void takeDamage(int damage)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void Die()
+    {
+        throw new System.NotImplementedException();
+    }
 }

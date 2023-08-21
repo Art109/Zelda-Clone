@@ -28,6 +28,14 @@ public class Sign : MonoBehaviour, IInteractable
 
         }
     }
+
+    public void CancelInteraction()
+    {
+        if(dialogBox.activeInHierarchy)
+        {
+            dialogBox.SetActive(false);
+        }
+    }
     
  
 }

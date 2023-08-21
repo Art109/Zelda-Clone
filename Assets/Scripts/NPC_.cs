@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NPC_ : MonoBehaviour, IInteractable
 {
-    string name = "Zé Rui Cabeca de Ovo";
+    string npc_name = "Zé Rui Cabeca de Ovo";
     [SerializeField] DialogBox dialogController;
     [SerializeField] GameObject dialogBox;
 
@@ -13,7 +13,7 @@ public class NPC_ : MonoBehaviour, IInteractable
 
     void Start()
     {
-        dialog += name;
+        dialog += npc_name;
     }
 
 
@@ -28,6 +28,14 @@ public class NPC_ : MonoBehaviour, IInteractable
             dialogBox.SetActive(true);
             StartCoroutine(dialogController.TypeDialog(dialog));
 
+        }
+    }
+
+    public void CancelInteraction()
+    {
+        if (dialogBox.activeInHierarchy)
+        {
+            dialogBox.SetActive(false);
         }
     }
 }
