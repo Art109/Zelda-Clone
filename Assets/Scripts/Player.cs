@@ -29,11 +29,8 @@ public class Player : MonoBehaviour, IDamageable
 
     }
 
-    // Update is called once per frame
-    void Update()
+    private void LateUpdate()
     {
-
-        
         if (isDashing)
         {
             return;
@@ -43,14 +40,16 @@ public class Player : MonoBehaviour, IDamageable
         input.x = Input.GetAxisRaw("Horizontal");
         input.y = Input.GetAxisRaw("Vertical");
 
-        
         Move();
+    }
+ 
 
-
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("Estou colidindo");
     }
 
-  
+
 
     void Move()
     {
@@ -88,7 +87,7 @@ public class Player : MonoBehaviour, IDamageable
         isDashing = true;
         canDash = false;
 
-        rb.velocity = new Vector2(input.x * dashPower, input.y * dashPower);
+        rb.velocity = new Vector2(input.x * dashPower, input.y * dashPower) ;
 
         yield return new WaitForSeconds(dashDuration);
        

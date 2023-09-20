@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NPC_ : MonoBehaviour, IInteractable
 {
-    string npc_name = "Zé Rui Cabeca de Ovo";
+    string npc_name = "Zé Cabeca de Ovo";
     [SerializeField] DialogBox dialogController;
     [SerializeField] GameObject dialogBox;
 
